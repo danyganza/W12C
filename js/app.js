@@ -9,12 +9,12 @@ function loginfailure(error){
 };
 
 function submit_click(details){
-    let email_input= document.querySelector(`.submit`);
-    let email_value= email_input[`value`];
-    let password_input= document.querySelector(`.input`);
-    let password_value= password_input[`value`];
-    let login_button = document.querySelector(`.btn`);
-    login_button.addEventListener(`click`, submit_click);
+    let email_input= document.querySelector('.submit');
+let email_value= email_input.value;
+let password_input= document.querySelector('.input');
+let password_value= password_input.value;
+let login_button = document.querySelector('.btn');
+login_button.addEventListener('click', submit_click);
 
     axios.request({
         url: `https://reqres.in/api/login`,
